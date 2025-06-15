@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #2d084f 0%, #3a2067 100%);
+  color: #f3f3f3;
+}
+
+header {
+  background: linear-gradient(120deg, #3a2067 0%, #2d084f 100%);
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffd700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10% 0 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.cta-btn {
+  background: #ffd700;
+  color: #2d084f;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  color: #3a2067;
+}
+
+.hero-image img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(45,8,79,0.25);
+}
+
+.about {
+  background: #32105a;
+  padding: 60px 10%;
+  border-radius: 30px 30px 0 0;
+  margin-top: -30px;
+}
+
+.about h2 {
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(45,8,79,0.15);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #ffd700;
+}
+
+.testimonials {
+  background: #2d084f;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #ffd700;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #3a2067;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(45,8,79,0.15);
+  max-width: 300px;
+  color: #fff;
+}
+
+.testimonial-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ffd700;
+}
+
+.testimonial-card h3 {
+  margin: 10px 0 5px 0;
+  color: #ffd700;
+}
+
+.testimonial-card .role {
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  margin-bottom: 10px;
+}
+
+.enroll-section {
+  background: #32105a;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.enroll-section h2 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.enroll-intro {
+  color: #bdbdbd;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  margin: 0 auto;
+}
+
+.enroll-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.enroll-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #6366f1;
+  font-weight: 500;
+  text-align: left;
+}
+
+.enroll-form input,
+.enroll-form select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+  transition: all 0.3s;
+  font-size: 1rem;
+  color: #222;
+}
+
+.enroll-form input:focus,
+.enroll-form select:focus {
+  border-color: #6366f1;
+  background: #fff;
+  outline: none;
+}
+
+.btn-next {
+  background: #6366f1;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn-next:hover {
+  transform: translateY(-2px);
+}
+
+.privacy-note {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: #2d084f;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 0 0 20px 20px;
+}

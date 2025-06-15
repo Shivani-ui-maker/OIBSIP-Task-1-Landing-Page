@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduLearn | Professional Course Enrollment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">EduLearn</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#enroll">Enroll</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Empower Your Future with EduLearn</h1>
+        <p>Join our professional courses and learn from the best lecturers in the industry.</p>
+        <a href="#enroll" class="cta-btn">Enroll Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/image1.png" alt="Lecture" />
+      </div>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <h2>Why Choose EduLearn?</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="./images/image2.png" alt="Students" />
+      </div>
+      <div class="about-text">
+        <p>
+          Our courses are designed by industry experts and delivered by passionate lecturers. We focus on practical skills, real-world projects, and personalized feedback to help you achieve your goals.
+        </p>
+        <ul>
+          <li>Expert Lecturers</li>
+          <li>Modern Curriculum</li>
+          <li>Flexible Schedules</li>
+          <li>Career Support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Students & Lecturers Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <img src="./images/image3.png" alt="Lecturer">
+        <h3>Dr. John Smith</h3>
+        <p class="role">Lead Lecturer, Data Science</p>
+        <p>"EduLearn provides a platform where I can truly connect with students and help them excel in their careers."</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="./images/image4.png" alt="Student">
+        <h3>Priya Sharma</h3>
+        <p class="role">Student, Web Development</p>
+        <p>"The hands-on projects and supportive faculty made my learning journey enjoyable and successful."</p>
+      </div>
+      <div class="testimonial-card">
+        <img src="./images/image5.png" alt="Student">
+        <h3>Alex Lee</h3>
+        <p class="role">Student, UI/UX Design</p>
+        <p>"I gained real-world skills and confidence to pursue my dream job. Highly recommended!"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="enroll-section" id="enroll">
+    <h2>Course Enrollment Form</h2>
+    <p class="enroll-intro">
+      Fill out the form below to enroll. Our admissions team will reach out to you within 24 hours.
+    </p>
+    <div class="container" id="enroll-container">
+      <div id="success-message" style="display:none;"></div>
+      <form class="enroll-form" id="enroll-form">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" placeholder="Full Name" required>
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Email Address" required>
+        <label for="course">Select Course</label>
+        <select id="course" required>
+          <option value="">Select Course</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="design">UI/UX Design</option>
+        </select>
+        <button type="submit" class="btn-next">Enroll Now</button>
+        <p class="privacy-note">We respect your privacy. Your information will not be shared.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EduLearn. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('enroll-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      document.getElementById('enroll-form').style.display = 'none';
+      document.getElementById('enroll-container').style.background = '#3a2067';
+      const msg = `<h3 style="color:#ffd700;">${name}, you have successfully enrolled in our free course!</h3>`;
+      document.getElementById('success-message').innerHTML = msg;
+      document.getElementById('success-message').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
