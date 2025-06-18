@@ -44,4 +44,8 @@ This project is a modern, professional landing page for EduLearn, designed for c
 
 ## License
 
-This project is for educational and
+This project is for educational and personal use only.
+
+---
+
+**Created by [P.SHIVANI]**
